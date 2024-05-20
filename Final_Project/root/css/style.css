@@ -36,6 +36,7 @@ nav ul li {
     font-size:1.5em;
     border: solid 2px white;
     margin: 1em;
+    padding: 0;
 }
 
 nav ul a {
