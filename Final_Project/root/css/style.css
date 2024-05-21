@@ -148,6 +148,19 @@ footer a:hover {
     color: darkgray
    
 }
+@media screen and (min-width: 650px){
+    .merge, footer .ftleft, footer .columns {
+        display: flex;
+        align-items: center;
+}
+
+    .merge, footer .ftleft .text, footer .columns .text {
+        flex: 1;
+}
+    footer img {
+        margin-left: .5em;
+}
+}
 @media screen and (min-width: 920px){
     .menuIcon {
         display: none;
@@ -164,15 +177,5 @@ footer a:hover {
    nav ul li {
     margin: .1em;
 }
-    .merge, footer .ftleft, footer .columns {
-        display: flex;
-        align-items: center;
-    }
 
-    .merge, footer .ftleft .text, footer .columns .text {
-        flex: 1;
-    }
-    footer img {
-        margin-left: .5em;
-    }
 }
