@@ -112,6 +112,9 @@ label {
 #shopcart{
     right:115px;
 }
+.cart-icon {
+    color: white;
+}
 /*footer */
 footer {
     background-color: #022E3B;
