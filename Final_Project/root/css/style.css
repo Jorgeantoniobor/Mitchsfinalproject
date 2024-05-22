@@ -172,8 +172,14 @@ footer a:hover {
    
 }
 /* jorge */
-/*maps section */
-.map {
+/*maps and sign section */
+.sign {
+    background-color: #022E3B;
+    margin: 5em;
+    padding: 5em;
+    color: white;
+}
+.map, .sign {
     align-items: center;
     text-align: center;
     justify-content: space-around;
@@ -184,7 +190,7 @@ footer a:hover {
     margin-bottom: 2.5em;
     
 }
-.map h2 {
+.map h2, .sign h2 {
     font-size:2.5em;
     text-transform: uppercase;
 }
@@ -195,22 +201,36 @@ footer a:hover {
 .map ul li {
     margin-bottom: 1em;
 }
-.mapsBtns {
-    box-shadow: 0 5px 5px #565555
-}
-.locBtns input {
+
+.locBtns input, .signBtns input {
     border-radius:25px;
     color:white;
-    background-color:#43ACC1;
     border: none; 
     padding: .5em 2em;
+    
+}
+.locBtns input {    
+    background-color:#43ACC1;
     box-shadow: 0 2px 3px #7d7d7d
 }
-.locBtns input:hover {
+.locBtns input:hover, .signBtns input:hover  {
     color:#43ACC1;
     background-color:white;
-    border: solid 1px #43ACC1
+    border: solid 1px #43ACC1;
 }
+.signBtns input {
+    background-color:#022E3B;
+    border: solid 3px #43ACC1;
+    margin:1em 0;
+}
+#Email{
+    border-radius:25px;
+    margin-top:1.5em;
+    border: none; 
+    width: 300px;
+    padding: .5em 0;
+}
+/*media screens -----------------------------------------------------*/
 @media screen and (min-width: 650px){
     .merge, footer .ftleft, footer .columns {
         display: flex;
