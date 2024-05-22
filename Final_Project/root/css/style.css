@@ -112,7 +112,7 @@ label {
 #shopcart{
     right:115px;
 }
-.cart-icon {
+.cart-icon, .search-icon  {
     color: white;
 }
 /*footer */
