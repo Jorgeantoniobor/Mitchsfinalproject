@@ -3,6 +3,12 @@ header
 
 font-size:1.5em;
 background-color: #43ACC1;
+color: white;
+
+body :
+h2 {
+    font-size:2.5em;
+    margin: 5em;
 
 footer: background-color: #022E3B;
 
@@ -122,6 +128,10 @@ footer {
     color: white;
     padding: 3em 0;   
 }
+footer img {
+    width:200px;
+    height:100px;     
+}
 footer h3 {
     padding: .5em 2em;
     text-transform: uppercase;
@@ -161,6 +171,46 @@ footer a:hover {
     color: darkgray
    
 }
+/* jorge */
+/*maps section */
+.map {
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.mapsI iframe { 
+    min-width: 450px;
+    min-height: 350px;
+    margin-bottom: 2.5em;
+    
+}
+.map h2 {
+    font-size:2.5em;
+    text-transform: uppercase;
+}
+.map p {
+    font-size:1.5em; 
+    margin: 1em 0;
+}
+.map ul li {
+    margin-bottom: 1em;
+}
+.mapsBtns {
+    box-shadow: 0 5px 5px #565555
+}
+.locBtns input {
+    border-radius:25px;
+    color:white;
+    background-color:#43ACC1;
+    border: none; 
+    padding: .5em 2em;
+    box-shadow: 0 2px 3px #7d7d7d
+}
+.locBtns input:hover {
+    color:#43ACC1;
+    background-color:white;
+    border: solid 1px #43ACC1
+}
 @media screen and (min-width: 650px){
     .merge, footer .ftleft, footer .columns {
         display: flex;
@@ -190,9 +240,29 @@ footer a:hover {
    nav ul li {
     margin: .1em;
 }
-
+/* jorge */    
+.map {
+    border: solid 1px black;
+    margin: 5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around; 
 }
-/* jorge */
+
+.mapsI {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mapsI iframe { 
+    min-width: 550px;
+    min-height: 400px;
+    margin-bottom:0;    
+}
+
 
 
 /*ELizabeth*/
