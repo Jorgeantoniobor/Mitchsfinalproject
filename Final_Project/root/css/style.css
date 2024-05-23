@@ -62,7 +62,7 @@ nav ul a {
     color: white;
     text-decoration: none;
     font-size: 1.3em;
-    margin:
+    
 }
 
 nav ul a:hover {
@@ -282,13 +282,93 @@ footer a:hover {
     min-height: 400px;
     margin-bottom:0;    
 }
-
+}
 
 
 /*ELizabeth*/
 
 
 /* Nika*/
-
-
+.mediaInfo{
+    margin-top: 2rem;
+}
+.posts,.videos{
+    margin: 5rem;
+}
+.posts h2,.videos h2{
+    font-size: 2.5rem;
+}
+.postRow,.videosRow{
+    font-size: 1.5rem;
+    position: relative;
+}
+.postRow .likes{
+    font-size: 1.5rem;
+    margin:1rem 1rem;
+}
+.postRow .likes span{
+    margin-right: 2rem;
+}
+.postRow p{
+    margin: 1rem;
+}
+.postRow .tags{
+    color: #43ACC1;
+    margin-top: 1rem;
+   
+}
+.postRow article,.videosRow article{
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+.videosRow article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.left{
+    position: relative;
+}
+.right{
+    padding: 1rem;
+}
+.right h3{
+    margin-bottom: 2rem;
+}
+.right p{
+    font-size: 1rem;
+    color: #7d7d7d;
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 620px){
+    .postRow{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        max-width: 750px;
+    }
+    /* .videosRow{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        max-width: 750px;
+    } */
+}
+@media screen and (min-width: 920px){
+    .mediaInfo{
+        margin-top: 0rem;
+    }
+    .postRow{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        max-width: 1200px;
+    }
+    .videosRow{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        max-width: 1200px;
+    }
+}
 /*Anas*/
