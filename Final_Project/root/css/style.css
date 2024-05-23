@@ -29,7 +29,7 @@ header img {
 .menuwrap {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: .5em;
     max-width: 1800px;
     margin: auto;
@@ -50,7 +50,7 @@ nav ul {
 
 nav ul li {
     text-align: center;
-    font-size:1.5em;
+    font-size: 1.5em;
     border: solid 2px white;
     margin: 1em;
      
@@ -113,10 +113,10 @@ label {
     top: 35px;
 }
 #search {
-    right:65px;
+    right: 65px;
 }
 #shopcart{
-    right:115px;
+    right: 115px;
 }
 .cart-icon, .search-icon  {
     color: white;
@@ -129,8 +129,8 @@ footer {
     padding: 3em 0;   
 }
 footer img {
-    width:200px;
-    height:100px;     
+    width: 200px;
+    height: 100px;     
 }
 footer h3 {
     padding: .5em 2em;
@@ -167,8 +167,8 @@ footer a:hover {
 }
 .bottom {
     padding: 2em;
-    font-weight:normal;
-    color: darkgray
+    font-weight: normal;
+    color: darkgray;
    
 }
 /* jorge */
@@ -191,11 +191,11 @@ footer a:hover {
     
 }
 .map h2, .sign h2 {
-    font-size:2.5em;
+    font-size: 2.5em;
     text-transform: uppercase;
 }
 .map p {
-    font-size:1.5em; 
+    font-size: 1.5em; 
     margin: 1em 0;
 }
 .map ul li {
@@ -203,25 +203,25 @@ footer a:hover {
 }
 
 .locBtns input, .signBtns input {
-    border-radius:25px;
-    color:white;
+    border-radius: 25px;
+    color: white;
     border: none; 
     padding: .5em 2em;
     
 }
 .locBtns input {    
-    background-color:#43ACC1;
-    box-shadow: 0 2px 3px #7d7d7d
+    background-color: #43ACC1;
+    box-shadow: 0 2px 3px #7d7d7d;
 }
 .locBtns input:hover, .signBtns input:hover  {
-    color:#43ACC1;
-    background-color:white;
+    color: #43ACC1;
+    background-color: white;
     border: solid 1px #43ACC1;
 }
 .signBtns input {
-    background-color:#022E3B;
+    background-color: #022E3B;
     border: solid 3px #43ACC1;
-    margin:1em 0;
+    margin: 1em 0;
 }
 #Email{
     border-radius:25px;
@@ -253,9 +253,9 @@ footer a:hover {
         padding: 1px 0;
         display: flex;
         position: absolute;
-        top:40px;
+        top: 40px;
         left: 230px;
-        margin:.2em;
+        margin: .2em;
     }
    nav ul li {
     margin: .1em;
@@ -280,13 +280,23 @@ footer a:hover {
 .mapsI iframe { 
     min-width: 550px;
     min-height: 400px;
-    margin-bottom:0;    
+    margin-bottom: 0;    
 }
 }
 
 
 /*ELizabeth*/
+h2 {
+    font-size: 2.5em;
+}
+#shippingTag {
+    font-size: 1.5em;
+    color: #BC572B;
+}
 
+p, ul {
+    font-size: 1.2em;
+}
 
 /* Nika*/
 .mediaInfo{
@@ -304,7 +314,7 @@ footer a:hover {
 }
 .postRow .likes{
     font-size: 1.5rem;
-    margin:1rem 1rem;
+    margin: 1rem 1rem;
 }
 .postRow .likes span{
     margin-right: 2rem;
