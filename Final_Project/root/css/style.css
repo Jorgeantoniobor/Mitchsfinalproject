@@ -7,7 +7,7 @@ color: white;
 
 body :
 h2 {
-    font-size:2.5em;
+    font-size: 2.5em;
     margin: 5em;
 
 footer: background-color: #022E3B;
@@ -109,13 +109,13 @@ label {
 #search, #shopcart {
     font-size: 3.6em;
     color: white; 
-     position: absolute; 
+    position: absolute; 
     top: 35px;
 }
 #search {
     right: 65px;
 }
-#shopcart{
+#shopcart {
     right: 115px;
 }
 .cart-icon, .search-icon  {
@@ -135,13 +135,13 @@ footer img {
 footer h3 {
     padding: .5em 2em;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: left;
 }
 
 footer p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: .5em 2em;
     text-align: left;
 }
@@ -150,14 +150,15 @@ footer ul li {
     text-align: left;
 }
 .SMlogos {
-    font-size: 4em;
+    font-size: 2.5em;
     padding: .5em 0; 
     color: #43ACC1;
+    
 }
 
 footer a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
 }
 
@@ -168,9 +169,12 @@ footer a:hover {
 .bottom {
     padding: 2em;
     font-weight: normal;
-    color: darkgray;
-   
+    color: darkgray;  
 }
+.ftleft {
+    margin: 1rem;
+}
+
 /* jorge */
 /*maps and sign section */
 .sign {
@@ -223,9 +227,9 @@ footer a:hover {
     border: solid 3px #43ACC1;
     margin: 1em 0;
 }
-#Email{
-    border-radius:25px;
-    margin-top:1.5em;
+#Email {
+    border-radius: 25px;
+    margin-top: 1.5em;
     border: none; 
     width: 300px;
     padding: .5em 0;
@@ -287,71 +291,88 @@ footer a:hover {
 
 /*ELizabeth*/
 h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
+    margin: 1.5rem;
+}
+h3 {
+    font-size: 1.7em;
+    margin: 1.5em;
 }
 #shippingTag {
     font-size: 1.5em;
     color: #BC572B;
+    margin: 1rem;
+    text-transform: uppercase;
 }
 
-p, ul {
+p {
     font-size: 1.2em;
+    margin: .5em 2em .5em;
+    line-height: 1.2em;
+    
+}
+
+li {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-left: 2.5em;
+    
 }
 
 /* Nika*/
-.mediaInfo{
+.mediaInfo {
     margin-top: 2rem;
 }
-.posts,.videos{
+.posts,.videos {
     margin: 5rem;
 }
-.posts h2,.videos h2{
+.posts h2,.videos h2 {
     font-size: 2.5rem;
 }
-.postRow,.videosRow{
+.postRow,.videosRow {
     font-size: 1.5rem;
     position: relative;
 }
-.postRow .likes{
+.postRow .likes {
     font-size: 1.5rem;
     margin: 1rem 1rem;
 }
-.postRow .likes span{
+.postRow .likes span {
     margin-right: 2rem;
 }
-.postRow p{
+.postRow p {
     margin: 1rem;
 }
-.postRow .tags{
+.postRow .tags {
     color: #43ACC1;
     margin-top: 1rem;
    
 }
-.postRow article,.videosRow article{
+.postRow article,.videosRow article {
     margin-top: 2rem;
     border: 1px solid black;
 }
-.videosRow article{
+.videosRow article {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
 }
-.left{
+.left {
     position: relative;
 }
-.right{
+.right {
     padding: 1rem;
 }
-.right h3{
+.right h3 {
     margin-bottom: 2rem;
 }
-.right p{
+.right p {
     font-size: 1rem;
     color: #7d7d7d;
     margin-bottom: 2rem;
 }
 @media screen and (min-width: 620px){
-    .postRow{
+    .postRow {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
@@ -365,16 +386,16 @@ p, ul {
     } */
 }
 @media screen and (min-width: 920px){
-    .mediaInfo{
+    .mediaInfo {
         margin-top: 0rem;
     }
-    .postRow{
+    .postRow {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 1rem;
         max-width: 1200px;
     }
-    .videosRow{
+    .videosRow {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
