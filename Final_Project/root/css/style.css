@@ -400,6 +400,7 @@ li {
     flex-direction: column;
     margin-top: 1rem;
     position: relative;
+    margin-left:0 ;
 }
 .form-control{
     height: 36px;
@@ -433,10 +434,6 @@ li {
     right: 0;
 }
 
-.formArea li{
-   margin-left:0 ;
-}
-
 .submit{
     width: 100%;
     background-color: #43ACC1;
@@ -453,6 +450,63 @@ li {
     background-color: white;
     color: #43ACC1;
 }
+/* product */
+.product{
+    margin: 5rem;
+}
+.p-info h2{
+    color: #43ACC1;
+    margin-left: 2.5rem;
+}
+.p-info .detail{
+    color:  #43ACC1;
+    border: 2px solid  #43ACC1;
+    border-radius: 10px;
+    padding: .5rem 2rem;
+   font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2.5rem;
+    text-align: center;
+}
+.p-info ul{
+    margin-top: 1.5rem;
+   list-style: disc;
+}
+.p-info p{
+    font-size: 1.5rem;
+    color: gray;
+}
+.p-info .shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-info .price{
+    font-size: 2.5rem;
+    color: #BC572B;
+   
+}
+.addbtn{
+    font-size: 1.5rem;
+    background-color: #BC572B;
+    color: white;
+    border:1px solid #BC572B;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    margin-left: 2.5rem;
+}
+.addbtn i{
+    margin-left: .5rem;
+}
+
+.addbtn:hover{
+    background-color: white;
+    color: #BC572B;
+    cursor: pointer;
+}
+.addbtn:hover i{
+    color: #BC572B;
+}
 @media screen and (min-width: 620px){
     .postRow {
         display: grid;
@@ -466,6 +520,17 @@ li {
         gap: 1rem;
         max-width: 750px;
     } */
+    .productRow{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .productImgRow{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        max-width: 1200px;
+    }
 }
 @media screen and (min-width: 920px){
     .mediaInfo {
@@ -480,6 +545,24 @@ li {
     .videosRow {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        max-width: 1200px;
+    }
+    .productRow{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        max-width: 1200px;
+    }
+    .p-img{
+        grid-column: 1/2;
+    }
+    .p-info{
+        grid-column: 2/-1;
+    }
+    .productImgRow{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         gap: 1rem;
         max-width: 1200px;
     }
@@ -504,6 +587,7 @@ li {
      .title-div{
         text-align: left;
     }
+    
     
     }
     @media screen and (min-width:960px){
