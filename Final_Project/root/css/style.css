@@ -357,19 +357,100 @@ li {
     grid-template-columns: repeat(2,1fr);
     
 }
-.left {
+.videosRow .left {
     position: relative;
 }
-.right {
+.videosRow .right {
     padding: 1rem;
 }
-.right h3 {
+.videosRow .right h3 {
     margin-bottom: 2rem;
 }
-.right p {
+.videosRow .right p {
     font-size: 1rem;
     color: #7d7d7d;
     margin-bottom: 2rem;
+}
+/* join */
+
+.formArea{
+    color: gray;
+    padding: 2rem 0;
+    margin: 5rem 5rem;
+}
+.formArea article{
+    border: 1px dashed #43ACC1;
+    padding: 2rem 1rem;
+    position: relative;
+}
+.formGroup{
+    position: relative;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+.formArea li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    position: relative;
+}
+.form-control{
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid rgb(164, 164, 164);
+}
+.form-control:focus-visible{
+    outline: 1px solid #43ACC1;
+}
+#msg.form-control{
+    height: 200px;
+   
+}
+.formArea article.right{
+    margin-top: 2rem;
+}
+.formArea .form-title{
+    position: absolute;
+    top: -4rem;
+    font-size: 2rem;
+    color: #43ACC1;
+    font-weight: 600;
+    background-color: white;
+    padding: 0 4px;
+   
+}
+.formArea label {
+    align-self: self-start;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.formArea li{
+   margin-left:0 ;
+}
+
+.submit{
+    width: 100%;
+    background-color: #43ACC1;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    border: 1px solid #43ACC1;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: white;
+    color: #43ACC1;
 }
 @media screen and (min-width: 620px){
     .postRow {
@@ -402,4 +483,41 @@ li {
         max-width: 1200px;
     }
 }
+@media screen and (min-width:750px) {
+    .container{
+        padding: 0 5rem;
+    }
+     main .formArea{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        max-width: 1200px;
+     }   
+     .formArea article.right{
+        grid-column: 2/-1;
+        margin-top: 0;
+     }
+     h2.section-title{
+        text-align: left;
+     }
+     .title-div{
+        text-align: left;
+    }
+    
+    }
+    @media screen and (min-width:960px){
+     
+        .formArea li.mt-2{
+            margin-top: 2rem;
+        }
+        .flex-row{
+            justify-content: left;
+        }
+        .col-2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+        }
+    }
+    
 /*Anas*/
