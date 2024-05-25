@@ -606,7 +606,6 @@ li {
     }
     
 /*Anas*/
-/* shop page starts here */
 .shopHeading-bg {
     position: relative;
     background: url("../images/shop_hd_bg.jpg") no-repeat center;
@@ -739,6 +738,7 @@ li {
 }
 .location .directions .location-btn {
     margin: 20px 10px 40px 10px;
+    text-align: center;
 }
 .direction-btn {
     background-color: #43ACC1;
@@ -748,10 +748,10 @@ li {
     border-radius: 100px;
     cursor: pointer;
     font-size: 1.6em;
-    font-weight: 600;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
     width: 100%;
     text-align: center;
+    font-family: "Fjalla One", sans-serif;
 }
 .directions .location-btn #get-direction:hover {
     background-color: transparent;
@@ -861,6 +861,16 @@ li {
     }
     .alerts input {
         width: 70%;
+    }
+    .location-btn #get-direction,
+    .location-btn #reviews {
+        padding: 5px 30px;
+    }
+    .location-btn #get-direction {
+        width: 45%;
+    }
+    .location-btn #reviews {
+        width: 60%;
     }
 }
 
