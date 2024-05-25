@@ -606,6 +606,7 @@ li {
     }
     
 /*Anas*/
+/* shop page starts here */
 .shopHeading-bg {
     position: relative;
     background: url("../images/shop_hd_bg.jpg") no-repeat center;
@@ -809,8 +810,9 @@ li {
 }
 
 @media screen and (min-width: 780px) {
-    .shop-main {
+    .shop-main .on-sale {
         max-width: 1200px;
+        margin: 0 auto;
     }
     .shopHeading-bg h1 {
         width: 60%;
@@ -819,7 +821,6 @@ li {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        max-width: 1200px;
     }
     .by-category article:last-of-type {
         display: none;
