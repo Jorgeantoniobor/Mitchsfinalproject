@@ -815,7 +815,7 @@ li {
         margin: 0 auto;
     }
     .shopHeading-bg h1 {
-        width: 60%;
+        max-width: 650px;
     }
     .grid-container {
         display: grid;
