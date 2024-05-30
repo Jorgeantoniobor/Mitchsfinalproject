@@ -75,7 +75,7 @@ nav ul a:hover {
     color: white;
     cursor: pointer;
     position: absolute; 
-    top: 20px; 
+/*     top: 20px;  */
     right: 10px;
 }
 
@@ -110,7 +110,7 @@ nav ul a:hover {
     font-size: 3.6em;
     color: white; 
     position: absolute; 
-    top: 35px;
+/*     top: 35px; */
 }
 #search {
     right: 65px;
@@ -263,7 +263,14 @@ footer a:hover {
     }
    nav ul li {
     margin: .1em;
-}
+    }
+    .menuwrap img {
+        width: auto;
+        height: auto;
+    }
+    #search, #shopcart{
+        top: 35px;
+    }
 /* jorge */    
 .map {
     border: solid 1px black;
@@ -684,6 +691,10 @@ li {
 .grid-container article img {
     width: 100%;
     height: 100%;
+}
+.grid-container article img:hover {
+    transform: scale(1.01);
+    transition: .3s;
 }
 .grid-container article section {
     text-align: center;
