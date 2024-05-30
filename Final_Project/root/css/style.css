@@ -23,7 +23,8 @@ header {
     background-color: #43ACC1;
 }
 header img {
-    margin: 10px;   
+    margin: 10px; 
+    width: 100px;
 }
 /*nav */
 .menuwrap {
