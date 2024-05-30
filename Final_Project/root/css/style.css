@@ -92,7 +92,7 @@ nav ul a:hover {
     transition: all .5s;
 }
 
-label {
+.menuwrap label {
     align-self: flex-end;
     position: absolute;
     top: 20px; 

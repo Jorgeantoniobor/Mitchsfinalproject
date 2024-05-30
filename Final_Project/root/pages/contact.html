@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
-        <title>Contact Us</title>
+        <title>Contact Us | Mitch`s Surf Shop</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,6 +84,48 @@
                         </ul>
                </aside>
            </section>
+    <form action="#" id="book" method="post">
+        <fieldset>
+            <legend>Rental Request Form</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="rental-item">Select Rental Item:</label>
+            <select id="rental-item" name="rental-item" required>
+                <option value="wetsuit">Wetsuit - $10/day</option>
+                <option value="soft-surfboard">Soft Surfboard - $20/day</option>
+                <option value="fiberglass-surfboard">Fiberglass Surfboard - $45/day</option>
+                <option value="boogie-board">Boogie Board - $10/day</option>
+                <option value="sup">SUP with paddle - $40/day (La Jolla only)</option>
+                <option value="snorkle-mask">Snorkle & Mask - $10/day (La Jolla only)</option>
+                <option value="swim-fins">Swim Fins - $5/day (La Jolla only)</option>
+            </select><br><br>
+
+            <label for="rental-days">Number of Days:</label>
+            <input type="number" id="rental-days" name="rental-days" min="1" required><br><br>
+
+            <label for="shop-location">Select Shop Location:</label>
+            <select id="shop-location" name="shop-location" required>
+                <option value="main-shop">Main Shop</option>
+                <option value="la-jolla">Mitch's La Jolla</option>
+            </select><br><br>
+
+            <label for="credit-card">Credit Card Number:</label>
+            <input type="text" id="credit-card" name="credit-card" required><br><br>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit Rental Request">
+        </fieldset>
+    </form>
             
         </main>   
         
