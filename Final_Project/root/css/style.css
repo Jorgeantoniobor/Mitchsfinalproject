@@ -1,19 +1,3 @@
-/*
-header
-
-font-size:1.5em;
-background-color: #43ACC1;
-color: white;
-
-body :
-h2 {
-    font-size: 2.5em;
-    margin: 5em;
-
-footer: background-color: #022E3B;
-
-*/
-
 html {
     font-size: 10px;
     font-family: "Fjalla One", sans-serif;
@@ -278,6 +262,18 @@ li {
     margin-bottom: 2em;
 }
 
+a {
+    color: #BC572B;
+    text-decoration: none;
+        }
+a:hover {
+    color: #43ACC1;
+    text-decoration: underline;
+        }
+a:active {
+    color: #2f6a75;
+        }
+
 .contactHeading-bg {
     position: relative;
     background: url("../images/contactBG.jpg") no-repeat center;
@@ -338,9 +334,46 @@ li {
     margin-top: 3rem;
 }
 
-#book {
-    margin: auto;
-}
+
+/*form styling */
+ form {
+            border: 2px solid #BC572B;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+fieldset {
+            border: none;
+        }
+legend {
+            font-size: 1.5em;
+            color: #BC572B;
+        }
+label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+input[type="submit"] {
+            background-color: #ffffff;
+            color: #022E3B;
+            padding: 10px 20px;
+            border: 2px solid #022E3B;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+input[type="submit"]:hover {
+            background-color: #022E3B;
+            color: #ffffff;
+        }
 
 
 /* Nika*/
@@ -590,7 +623,12 @@ li {
         gap: 1rem;
         max-width: 1200px;
     }
-}
+    
+    form, p, h2, h3, li, ul, .shippingTag, h3.shippingTag {
+        max-width: 920px;
+        margin: 20px auto;
+     }
+
 @media screen and (min-width:750px) {
     .container{
         padding: 0 5rem;
