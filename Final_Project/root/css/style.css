@@ -197,6 +197,7 @@ footer a:hover {
     #search, #shopcart{
         top: 35px;
     }
+}
 /* jorge */    
 .map {
     border: solid 1px black;
@@ -219,9 +220,70 @@ footer a:hover {
     min-height: 400px;
     margin-bottom: 0;    
 }
+/* header img */
+.imgHeader {
+  position: relative;
+  background: url("../images/home_hd_bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
+  z-index: 1;
+  font-size: 3em;
 }
 
+.imgHeader h1 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  color: white;
+  line-height: 2;
+  font-family: "Bangers", cursive;
+}
 
+.btnsHdr li {
+  position: relative;
+  top: 250px;
+  display: inline-block;
+  border-radius: 25px;
+  border: solid 2px #43ACC1;
+  font-size: .6em;
+  padding: .5em 5em;
+  margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(67, 172, 193, 1);
+}
+
+.btnsHdr a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 920px) {
+  .imgHeader h1 {
+    left: auto;
+    right: 65px;
+    top: 150px;  
+  }
+  .btnsHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+  }
+  .btnsHdr {
+    display: flex;
+    gap: 10px;
+  }
+  .btnsHdr li {
+    top: 0;
+    margin: 0;
+  }
+}
 /*ELizabeth*/
 h2 {
     font-size: 2.3em;
