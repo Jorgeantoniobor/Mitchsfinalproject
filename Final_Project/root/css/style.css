@@ -319,6 +319,33 @@ li {
     
 }
 
+.contactHeading-bg {
+    position: relative;
+    background: url("../images/contactBG.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
+    z-index: 1;
+}
+.contactHeading-bg h1 {
+    font-size: 3em;
+    position: absolute;
+    bottom: 50px;
+    color: #43ACC1;
+    font-family: "Bangers", system-ui;
+    line-height: 1.3;
+    padding: 0 50px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contactHeading-bg h1 span {
+    color: #000;
+    display: block;
+}
+
 /* Nika*/
 /* media page */
 .mediaInfo {
@@ -374,50 +401,50 @@ li {
 }
 /* join page*/
 
-.formArea{
+.formArea {
     color: gray;
     padding: 2rem 0;
     margin: 5rem 5rem;
 }
-.formArea article{
+.formArea article {
     border: 1px dashed #43ACC1;
     padding: 2rem 1rem;
     position: relative;
 }
-.formGroup{
+.formGroup {
     position: relative;
 }
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
 }
-.flex-row{
+.flex-row {
     display: flex;
     justify-content: space-between;
 }
-.formArea li{
+.formArea li {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     position: relative;
     margin-left:0 ;
 }
-.form-control{
+.form-control {
     height: 36px;
     border-radius: 5px;
     border: 1px solid rgb(164, 164, 164);
 }
-.form-control:focus-visible{
+.form-control:focus-visible {
     outline: 1px solid #43ACC1;
 }
-#msg.form-control{
+#msg.form-control {
     height: 200px;
    
 }
-.formArea article.right{
+.formArea article.right {
     margin-top: 2rem;
 }
-.formArea .form-title{
+.formArea .form-title {
     position: absolute;
     top: -4rem;
     font-size: 2rem;
@@ -434,7 +461,7 @@ li {
     right: 0;
 }
 
-.submit{
+.submit {
     width: 100%;
     background-color: #43ACC1;
     color: white;
@@ -446,19 +473,19 @@ li {
     padding-bottom: 1rem;
     cursor: pointer;
 }
-.submit:hover{
+.submit:hover {
     background-color: white;
     color: #43ACC1;
 }
 /* product */
-.product{
+.product {
     margin: 5rem;
 }
-.p-info h2{
+.p-info h2 {
     color: #43ACC1;
     margin-left: 2.5rem;
 }
-.p-info .detail{
+.p-info .detail {
     color:  #43ACC1;
     border: 2px solid  #43ACC1;
     border-radius: 10px;
@@ -468,25 +495,25 @@ li {
     margin-left: 2.5rem;
     text-align: center;
 }
-.p-info ul{
+.p-info ul {
     margin-top: 1.5rem;
    list-style: disc;
 }
-.p-info p{
+.p-info p {
     font-size: 1.5rem;
     color: gray;
 }
-.p-info .shop{
+.p-info .shop {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.p-info .price{
+.p-info .price {
     font-size: 2.5rem;
     color: #BC572B;
    
 }
-.addbtn{
+.addbtn {
     font-size: 1.5rem;
     background-color: #BC572B;
     color: white;
@@ -495,16 +522,16 @@ li {
     border-radius: 20px;
     margin-left: 2.5rem;
 }
-.addbtn i{
+.addbtn i {
     margin-left: .5rem;
 }
 
-.addbtn:hover{
+.addbtn:hover {
     background-color: white;
     color: #BC572B;
     cursor: pointer;
 }
-.addbtn:hover i{
+.addbtn:hover i {
     color: #BC572B;
 }
 @media screen and (min-width: 620px){
