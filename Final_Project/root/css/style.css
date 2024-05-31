@@ -246,7 +246,7 @@ h3.shippingTag  {
     margin: 1rem;
     text-transform: uppercase;
 }
-
+/*
 p {
     font-size: 1.2em;
     margin: .5em 2em .5em;
@@ -259,7 +259,7 @@ li {
     line-height: 1.2em;
     margin-left: 2.5em;
     
-}
+}*/
 .shadow {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
     margin-bottom: 2em;
@@ -316,7 +316,7 @@ a:active {
     z-index: 1;
     margin-bottom: 2em;
 }
-.aboutHeading-bg h1 {
+.aboutHeading-bg h1 { 
     font-size: 3em;
     position: absolute;
     bottom: 50px;
@@ -835,7 +835,24 @@ input[type="submit"]:hover {
 
 /*----------------------------------- media screens -----------------------------------------------------*/
 
-@media screen and (min-width: 650px){
+
+/* original media screen measurements before Liz consolidated: 
+we should have 3??? Media query: 400px(phone) 620px(tablet)  950px(PC)
+
+Before i consolidated: 
+Anas shop was 780px
+Nika media was 620 also 960
+Jorge header was 920
+Footer was 650 */
+
+@media screen and (min-width: 400px){
+ form, p, h2, h3, li, ul, .shippingTag, h3.shippingTag {
+        margin: 20px auto;
+        
+     }
+
+}
+@media screen and (min-width: 620px){
     /* media, join and product */
      .postRow {
         display: grid;
@@ -932,7 +949,7 @@ input[type="submit"]:hover {
     
     
     
-@media (min-width: 920px) {    
+@media (min-width: 950px) {    
     /* header */
   .imgHeader h1 {
     left: auto;
