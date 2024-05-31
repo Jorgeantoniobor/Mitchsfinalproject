@@ -377,15 +377,21 @@ a:active {
 fieldset {
     border: none;
         }
+.joinForm {
+     border: 2px solid #BC572B;
+    padding: 20px;
+    margin-bottom: 20px;
+        }
 legend {
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: #BC572B;
+    font-weight: bold;
         }
 label {
     display: block;
     margin: 10px 0 5px;
         }
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="submit"], select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -406,8 +412,15 @@ input[type="submit"]:hover {
     background-color: #022E3B;
     color: #fff;
         }
-
-
+.submit {
+    background-color: #BC572B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #43ACC1;
+}
 /* Nika*/
 /* media page */
 .mediaInfo {
@@ -880,6 +893,30 @@ input[type="submit"]:hover {
     footer img {
         margin-left: .5em;
 }
+    /* join form */
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            fieldset {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 600px;
+            }
+            label {
+                width: 100%;
+            }
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="submit"] {
+                max-width: 500px;
+            }
+    
+    
 }
     
     

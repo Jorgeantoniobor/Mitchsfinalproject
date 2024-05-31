@@ -17,7 +17,7 @@
     </head>
    
     <body>
-            <header>
+             <header class="shadow">
                  <section class="menuwrap">
                     <a href="index.html"><img src="../images/logo.png" alt="mitchs logo" ></a>
                     <label for="search" id="search">
@@ -32,116 +32,120 @@
                         <i class="fa-solid fa-xmark menuIconClose"></i>
                         </label>
                     <nav>   
-                        <ul> 
-                            <li> <a href="index.html">Home</a></li>
-                            <li><a href="pages/lessons.html">Lessons</a></li>
-                            <li><a href="pages/shop.html">Shop</a></li>
-                            <li><a href="pages/about.html">About Us</a></li>
-                            <li><a href="pages/contact.html">Contact Us</a></li>
-                            <li><a href="pages/faq.html">FAQ</a></li>
-                        </ul>     
+                    <ul> 
+                        <li> <a href="../index.html">Home</a></li>
+                        <li><a href="../pages/lessons.html">Lessons</a></li>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/about.html">About Us</a></li>
+                        <li><a href="../pages/contact.html">Contact Us</a></li>
+                        <li><a href="../pages/faq.html">FAQ</a></li>
+                    </ul>
                     
-                    </nav>
+                </nav>
                 </section>        
             </header>
     <main>       
+              <section>
+                 <aside>
+            <h2 class="shippingTag"> Join Mitch's Surf Club!</h2>
+                    <p>Dive into the surf culture and ride the waves like never before by joining Mitch's Surf Club! Whether you're a seasoned surfer or a beginner eager to learn, Mitch's Surf Shop offers a welcoming community, exclusive benefits, and unforgettable surfing experiences. As a member, you'll enjoy:</p>
+                        <ul>
+                            <li>Exclusive Discounts: Get special pricing on surfboards, wetsuits, and other gear.</li>
+                            <li>Members-Only Events: Participate in surf contests, beach cleanups, and social gatherings.</li>
+                            <li>Expert Tips and Clinics: Improve your skills with guidance from our experienced instructors.</li>
+                            <li>Early Access to New Gear: Be the first to try out the latest surf equipment.</li>
+                            <li>Join Mitch's Surf Club today and become part of a passionate community that lives and breathes surfing </li>
+                        </ul>
+                     <p>Catch the next wave with us!</p>
+            </aside>
+                
+                </section>
+                 
                <section>
-                <form class="formArea" action="#" id="newMember" method="post" enctype="text/plain">
-                    <article class="left">
-                        <h3 class="form-title">SIGN IN</h3>
-                        <ul class="formGroup flex-column" id="basics">
-                            <li>
-                                <label for="account">Account:</label>
-                                <input type="text" class="form-control" id="account">
-                            </li>
-                            <li>
-                                <label for="password">Passward:</label>
-                                <input type="text" class="form-control" id="password">
-                            </li>
-                            <li>
-                                <label for="saveAccount"> 
-                                    <input type="radio" id="saveAccount" name="ReAccount">
-                                    <span>Remember My Account</span>
-                                </label>
-                            </li>
-                        </ul>
-                        <input type="submit" class="submit" value="Login">
-                    </article>
-                    <article class="right">
-                        <h3 class="form-title">JOIN OUR CLUB</h3>
-                        <ul class="formGroup flex-column" id="basics">
-                            <li>
-                                <label for="name">Name:</label>
-                                <input type="text" class="form-control" id="name">
-                            </li>
-                            <li>
-                                <label for="email">Email:</label>
-                                <input type="text" class="form-control" id="email">
-                            </li>
-                            <li>
-                                <label for="phoneNumber">Phone number:</label>
-                                <input type="text" class="form-control" id="phoneNumber">
-                            </li>
-                            <br>
-                            <li>
-                                <label for="account">Account:</label>
-                                <input type="text" class="form-control" id="account">
-                            </li>
-                            <li>
-                                <label for="password">Passward:</label>
-                                <input type="text" class="form-control" id="password">
-                            </li>
-                            <li>
-                                <label for="confirmPassword">Confirm Passward:</label>
-                                <input type="text" class="form-control" id="confirmPassword">
-                            </li>
-                            <li>
-                                <label for="subEmail"> 
-                                    <input type="radio" id="subEmail" name="subEmail">
-                                    <span>Receive email from mitch's surf shop</span>
-                                </label>
-                            </li>
-                        </ul>
-                        <input type="submit" class="submit" value="Register">
-                    </article>
-                    
-                </form>
-               </section>
-                <section class="map">
-                <div class="mapsI">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107176.22765145851!2d-117.35737822979553!3d32.917804519240974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc03e5d3db9185%3A0xbcf1f4838ab560ab!2sMitch&#39;s%20Surf%20Shop!5e0!3m2!1sen!2sus!4v1716406590261!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <form action="mailto:info@mitchssurfshop.com" method="post" enctype="text/plain">
+        <fieldset class="joinForm">
+            <legend>Sign In</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label>
+                <input type="checkbox" id="remember" name="remember">
+                Remember my account
+            </label>
+            
+            <input type="submit" class="submit" value="Sign In">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Join Our Club</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label>Membership Type:</label>
+            <label>
+                <input type="radio" name="membership" value="monthly" required>
+                Monthly
+            </label>
+            <label>
+                <input type="radio" name="membership" value="yearly">
+                Yearly
+            </label>
+            
+            <label>Interests:</label>
+            <label>
+                <input type="checkbox" name="interests" value="surf-lessons">
+                Surf Lessons
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="events">
+                Events
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="gear-discounts">
+                Gear Discounts
+            </label>
+            
+            <input type="submit" class="submit" value="Join Our Club">
+        </fieldset>
+    </form>
+                       
+                  </section>
+              
+              
+                <section class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26817.809679443697!2d-117.30938423514581!3d32.83926177869744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc03e5d3db9185%3A0xbcf1f4838ab560ab!2sMitch&#39;s%20Surf%20Shop!5e0!3m2!1sen!2sus!4v1716512554883!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                <div class="directions">
+                    <h2>Visit Mitch’s Surf Shop</h2>
+                    <p>631 Pearl St, La Jolla, CA 92037</p>
+                    <div class="location-btn">
+                        <button id="get-direction" class="direction-btn" button>Get Directions</button>
+                        <button id="reviews" class="direction-btn" type="button">Reviews from Customers</button>
+                    </div>
                 </div>
-                <div class="mapsI">
-                    <h2>visit mitch's surf shop</h2>
-                    <p>631 Pearl ST, La Jolla, CA 92037</p>
-                    <ul class="formGroup locBtns">
-                    <li>
-                        <input type="submit" class="mapsBtns" value="Get Directions">
-                    </li>
-                    <li>
-                        <input type="submit" class="mapsBtns" value="Reviews from customers">
-                    </li>
-                </ul>
+            </section>
+           
+            <section class="alerts-container">
+                <div class="alerts">
+                    <h2>SING UP FOR ALERTS FOR 10% OFF!</h2>
+                    <input type="email" placeholder="enter your email">
+                    <button id="sign-up" class="money" type="button">Sign up</button>
                 </div>
-                </section>
-                <section class="sign">
-                    <h2>sign up for alerts, get 10% off!</h2>
-                    <form action="#" method="post" id="mainForm" enctype="text-plain">
-                    <input type="text" id="Email" name="Email" required placeholder="enter your email">
-                    </form>    
-                <ul class="formGroup signBtns">
-                    <li>
-                    <input type="submit" class="signBtns" value="Sign Up">
-                    </li> 
-                    </ul>
-                </section>
+            </section>
                 
     </main>
                 
      <footer>
         <div class="merge">
             <section class="ftleft">
-                <img src="../images/logo.png" alt="mitchs logo">
+                <a href="index.html"><img src="../images/logo.png" alt="mitchs logo" ></a>
                 <div class="text">
             <h3>About Mitch's Surf Shop</h3>
                 <p>We stock over 600 new and used surfboards and accessories. We specialize in buying, selling, and trading.</p>
