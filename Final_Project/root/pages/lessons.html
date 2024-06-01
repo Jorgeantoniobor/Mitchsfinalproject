@@ -14,6 +14,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+    $(document).ready(function() {
+        // Esconder o conteúdo inicialmente
+        $('.content').hide();
+        $('.hide-link').hide();
+        
+        // Função para mostrar o conteúdo quando clicar na seção
+        $('.sLss').click(function() {
+            var $content = $(this).find('.content');
+            var $toggle = $(this).find('.toggle');
+            var $hideLink = $(this).find('.hide-link');
+            $content.slideDown();
+            $toggle.hide();
+            $hideLink.show();
+        });
+
+        // Função para esconder o conteúdo
+        $('.hide-link').click(function(e) {
+            e.stopPropagation(); // Impede que o clique se propague para a seção pai
+            var $content = $(this).closest('.content');
+            var $toggle = $content.prev('.toggle');
+            $content.slideUp();
+            $(this).hide();
+            $toggle.show();
+        });
+    });
+</script>
     </head>
    
     <body>
@@ -48,48 +76,53 @@
             </section>
             </header>
         <main>
-           <h2 class=shippingTag>Surf Lessons at Mitch's Surf Shop</h2>
-
-                <p>At Mitch's Surf Shop, we offer a range of surf lessons designed for all skill levels, from beginners to advanced surfers. Our experienced instructors are dedicated to providing a safe, fun, and educational experience to help you develop your surfing skills and confidence in the water.</p>
-
-            <h3 class=shippingTag>Types of Lessons:</h3>
-
-            <h3 class=shippingTag>Private Surf Lessons</h3>
-                <ul>
-                    <li>Duration: 1.5 hours</li>
-                    <li>Description: Perfect for individuals looking for one-on-one instruction tailored to their specific needs and skill level. Whether you're catching your first wave or looking to refine your technique, our instructors will provide personalized guidance to help you progress.</li>
-                </ul>
-
-            <h3 class=shippingTag>Group Surf Lessons</h3>
-                <ul>
-                    <li>Duration: 1.5 hours</li>
-                    <li>Description: Ideal for friends, families, or anyone who prefers learning in a group setting. Group lessons provide a supportive and social environment where participants can learn from each other as well as from the instructor.</li>
-                </ul>
-
-            <h3 class=shippingTag>Semi-private Surf Lessons</h3>
-                <ul>
-                    <li>Duration: 1.5 hours</li>
-                    <li>Description: These lessons are great for small groups of 2-3 people who want more personalized attention than in a larger group setting but still enjoy the camaraderie of learning with others.</li>
-                </ul>
-
-            <h3 class=shippingTag>What to Expect:</h3>
-
-                <ul>
-                    <li>Safety First: All our lessons start with a safety briefing, covering essential ocean safety, surf etiquette, and techniques to ensure a safe and enjoyable surfing experience.</li>
-                    <li>Equipment Provided: We provide all necessary equipment, including surfboards, wetsuits, and rash guards. Just bring your enthusiasm and a desire to learn!</li>
-                    <li>Experienced Instructors: Our instructors are seasoned surfers with years of experience teaching all levels. They are passionate about sharing their love for surfing and helping students achieve their goals.</li>
-                </ul>
-
-            <h3 class=shippingTag>Booking and Availability</h3>
-
-                <ul>
-                    <li>How to Book: You can book your lesson directly through our website or by contacting our shop. We recommend booking in advance to secure your preferred time slot, especially during peak seasons.</li>
-                    <li>Cancellation Policy: We understand that plans can change. Please notify us at least 24 hours in advance if you need to cancel or reschedule your lesson to avoid any cancellation fees.</li>
-                </ul>
-
-                <p>Whether you're a first-timer or looking to improve your skills, Mitch's Surf Shop is here to help you ride the waves with confidence and style. Come join us and experience the thrill of surfing in beautiful San Diego!</p>
-            
-        </main>  
+        <section class="sLss">    
+        <h2 class="shippingTag">Surf Lessons at Mitch's Surf Shop</h2>
+        <h3 class="toggle">Learn More</h3>
+        <div class="content">
+            <p>At Mitch's Surf Shop, we offer a range of surf lessons designed for all skill levels, from beginners to advanced surfers. Our experienced instructors are dedicated to providing a safe, fun, and educational experience to help you develop your surfing skills and confidence in the water.</p>
+            <h3 class="shippingTag">Types of Lessons:</h3>
+            <h3 class="shippingTag">Private Surf Lessons</h3>
+            <ul>
+                <li>Duration: 1.5 hours</li>
+                <li>Description: Perfect for individuals looking for one-on-one instruction tailored to their specific needs and skill level. Whether you're catching your first wave or looking to refine your technique, our instructors will provide personalized guidance to help you progress.</li>
+            </ul>
+            <h3 class="shippingTag">Group Surf Lessons</h3>
+            <ul>
+                <li>Duration: 1.5 hours</li>
+                <li>Description: Ideal for friends, families, or anyone who prefers learning in a group setting. Group lessons provide a supportive and social environment where participants can learn from each other as well as from the instructor.</li>
+            </ul>
+            <h3 class="shippingTag">Semi-private Surf Lessons</h3>
+            <ul>
+                <li>Duration: 1.5 hours</li>
+                <li>Description: These lessons are great for small groups of 2-3 people who want more personalized attention than in a larger group setting but still enjoy the camaraderie of learning with others.</li>
+            </ul>
+            <h3 class="shippingTag">What to Expect:</h3>
+            <ul>
+                <li>Safety First: All our lessons start with a safety briefing, covering essential ocean safety, surf etiquette, and techniques to ensure a safe and enjoyable surfing experience.</li>
+                <li>Equipment Provided: We provide all necessary equipment, including surfboards, wetsuits, and rash guards. Just bring your enthusiasm and a desire to learn!</li>
+                <li>Experienced Instructors: Our instructors are seasoned surfers with years of experience teaching all levels. They are passionate about sharing their love for surfing and helping students achieve their goals.</li>
+            </ul>
+            <h3 class="shippingTag">Booking and Availability</h3>
+            <ul>
+                <li>How to Book: You can book your lesson directly through our website or by contacting our shop. We recommend booking in advance to secure your preferred time slot, especially during peak seasons.</li>
+                <li>Cancellation Policy: We understand that plans can change. Please notify us at least 24 hours in advance if you need to cancel or reschedule your lesson to avoid any cancellation fees.</li>
+            </ul>
+            <p>Whether you're a first-timer or looking to improve your skills, Mitch's Surf Shop is here to help you ride the waves with confidence and style. Come join us and experience the thrill of surfing in beautiful San Diego!</p>
+            <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </section>
+    <section class="wave">
+    <h2 class="shippingTag">How to Catch a Wave</h2>
+    <h3 class="toggle">Learn More</h3>
+    <div class="content">
+        <p>Riding a wave is an exhilarating experience that requires skill, timing, and a good understanding of the ocean.</p>
+        <p>To catch a wave, start by paddling out past the breaking waves until you reach the lineup, where the waves begin to crest and break.</p>
+        <p>Once you spot a wave you want to catch, paddle hard to match its speed and angle. As the wave begins to lift you, pop up onto your feet and ride down the face of the wave, using your body to balance and steer.</p>
+        <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</section>        
+    </main>
          <footer>
         <div class="merge">
             <section class="ftleft">

@@ -296,6 +296,9 @@ footer a:hover {
     font-size: 3em; 
     text-transform:uppercase;
 }
+.buttons p {
+    margin-left: 1.5em;
+}
 .buttons a {
     margin-left:1em;
     border-radius: 25px;
@@ -338,6 +341,46 @@ footer a:hover {
 }
 .onSale article {
     margin:1em 0;
+}
+.videosMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; 
+    margin: 0;
+}
+
+.videosMain iframe {
+    width: 100%;
+    max-width: 460px;
+    height: 340px;
+}
+/* Lessons page */
+.hidden-content {
+    display: none;
+}
+.toggle-link {
+    cursor: pointer;
+    color: #43ACC1;
+    font-size: 2em;
+    margin-left:25em;
+}
+.sLss{
+    margin:5em;
+    border: solid 2px #43ACC1;
+}
+.wave {
+    margin: 5em;
+    border: solid 2px #43ACC1;
+}
+
+.wave .toggle {
+    color: #43ACC1;
+    text-transform: uppercase;
+}
+
+.wave .toggle:hover {
+    color: #2f6a75;
 }
 /*ELizabeth*/
 h2 {
@@ -1145,7 +1188,7 @@ Footer was 650 */
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 5em .5em;
-        margin: 5em;
+        margin: 5em 5em 0;
     }
     
     .info-item {
@@ -1168,7 +1211,16 @@ Footer was 650 */
     .onSale img {
         max-width: 100%;
     }
+    .videosMain {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px; 
+        justify-content: center;
+    }
 
+    .videosMain iframe {
+        flex: 0 0 45%; 
+    }
      /* shop page */
     .shop-main .on-sale {
         max-width: 1200px;
