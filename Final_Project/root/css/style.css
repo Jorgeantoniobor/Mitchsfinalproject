@@ -291,13 +291,8 @@ footer a:hover {
     color: white;
     padding: .7em .4em;
 }
-.shop {
-    flex: 1 0 auto;
-    padding: 20px;       
-    background: #f8f8f8; 
-}
 .buttons {
-    padding:1em 1em;
+    padding:.1em .1em;
     font-size: 3em; 
     text-transform:uppercase;
 }
@@ -311,9 +306,38 @@ footer a:hover {
     background-color: #43ACC1;
     color: white;
 }
-.box {
-    background-color: #a8d4e6;
+
+.info-section {
     display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: #b2ebf2;    
+}
+
+.info-item {
+    text-align: center; 
+    margin: 10px;
+    width: 100%; 
+    color:#022E3B;
+}
+
+.info-item h3, .info-item i {
+    margin: 10px 0;
+    font-size: 3em;
+}
+.info-item h3 {
+   font-family: "Bangers", cursive;     
+}
+.info-item p {
+    margin: 0;
+    font-size: 2em;
+}
+.onSale {
+    text-align: center;
+}
+.onSale article {
+    margin:1em 0;
 }
 /*ELizabeth*/
 h2 {
@@ -987,29 +1011,9 @@ Footer was 650 */
      .title-div{
         text-align: left;
     } 
-    
-    /* footer */
-     .merge, footer .ftleft, footer .columns {
-        display: flex;
-        align-items: center;
-}
-
-    .merge, footer .ftleft .text, footer .columns .text {
-        flex: 1;
-}
-    footer img {
-        margin-left: .5em;
-}     .merge, footer .ftleft, footer .columns {
-        display: flex;
-        align-items: center;
-}
-
-    .merge, footer .ftleft .text, footer .columns .text {
-        flex: 1;
-}
-    .for {
+     .for {
         grid-template-columns: 1fr 1fr 1fr; 
-        margin: 5em;
+        margin: 5em 5em 0;
         gap: 1em;
 }
 
@@ -1033,7 +1037,27 @@ Footer was 650 */
         grid-row: 2 / 3;    
         display: block;     
 }
-    
+    /* footer */
+     .merge, footer .ftleft, footer .columns {
+        display: flex;
+        align-items: center;
+}
+
+    .merge, footer .ftleft .text, footer .columns .text {
+        flex: 1;
+}
+    footer img {
+        margin-left: .5em;
+}     .merge, footer .ftleft, footer .columns {
+        display: flex;
+        align-items: center;
+}
+
+    .merge, footer .ftleft .text, footer .columns .text {
+        flex: 1;
+}
+   
+   
     footer img {
         margin-left: .5em;
 }
@@ -1068,6 +1092,7 @@ Footer was 650 */
     
 @media (min-width: 950px) {    
     /* header */
+  
   .imgHeader h1 {
     left: auto;
     right: 65px;
@@ -1114,7 +1139,36 @@ Footer was 650 */
     #search, #shopcart{
         top: 35px;
     }
+    /* body part */
+    .info-section {
+        flex-direction: row; /
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5em .5em;
+        margin: 5em;
+    }
     
+    .info-item {
+        flex: 1 1 30%; 
+        min-width: 250px; 
+    }
+    .onSale {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 5em;    
+    }
+
+    .onSale article {
+        flex: 1 1 30%;
+        margin: 1em;
+        max-width: 30%;
+    }
+
+    .onSale img {
+        max-width: 100%;
+    }
+
      /* shop page */
     .shop-main .on-sale {
         max-width: 1200px;
