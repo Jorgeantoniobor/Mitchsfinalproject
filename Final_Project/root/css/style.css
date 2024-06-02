@@ -1313,6 +1313,8 @@ Footer was 650 */
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     .cart {
         width: 70%;
