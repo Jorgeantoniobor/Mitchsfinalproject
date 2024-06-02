@@ -1114,7 +1114,7 @@ Footer was 650 */
 
 @media screen and (min-width: 400px){
  form, p, h2, h3, li, ul, .shippingTag, h3.shippingTag {
-        margin: 20px auto;
+        margin: 20px auto; /* this the one that i was talking about Elizabeth it is good to use like a Descendant combinator. */
         
      }
 
