@@ -17,11 +17,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <script>
     $(document).ready(function() {
-        // Esconder o conteúdo inicialmente
+        
         $('.content').hide();
         $('.hide-link').hide();
         
-        // Função para mostrar o conteúdo quando clicar na seção
+        
         $('.sLss').click(function() {
             var $content = $(this).find('.content');
             var $toggle = $(this).find('.toggle');
@@ -31,9 +31,9 @@
             $hideLink.show();
         });
 
-        // Função para esconder o conteúdo
+        
         $('.hide-link').click(function(e) {
-            e.stopPropagation(); // Impede que o clique se propague para a seção pai
+            e.stopPropagation(); 
             var $content = $(this).closest('.content');
             var $toggle = $content.prev('.toggle');
             $content.slideUp();
@@ -76,7 +76,8 @@
             </section>
             </header>
         <main>
-        <section class="sLss">    
+        <section class="articles-container">    
+        <article class="sLss">    
         <h2 class="shippingTag">Surf Lessons at Mitch's Surf Shop</h2>
         <h3 class="toggle">Learn More</h3>
         <div class="content">
@@ -111,18 +112,171 @@
             <p>Whether you're a first-timer or looking to improve your skills, Mitch's Surf Shop is here to help you ride the waves with confidence and style. Come join us and experience the thrill of surfing in beautiful San Diego!</p>
             <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
-    </section>
-    <section class="wave">
-    <h2 class="shippingTag">How to Catch a Wave</h2>
-    <h3 class="toggle">Learn More</h3>
-    <div class="content">
-        <p>Riding a wave is an exhilarating experience that requires skill, timing, and a good understanding of the ocean.</p>
+        </article>
+        <article class="sLss">    
+        <h2 class="shippingTag">7 Essential Tips for Beginners Learning to Surf</h2>
+        <h3 class="toggle">Learn More</h3>
+        <div class="content">
+           <p>Learning to surf can be an exhilarating and rewarding experience, but it also requires patience, practice, and the right approach. Here are seven essential tips to help beginners get started on the right wave. </p>
+            <h3 class="shippingTag">1. Choose the Right Surfboard</h3>
+            <p>Start with a larger, more stable board such as a longboard or a foam board. These boards provide better balance and are easier to paddle, making them ideal for beginners who need to get comfortable standing up and catching waves.</p>
+
+            <h3 class="shippingTag">2. Find a Good Spot</h3>
+            <p>Begin at a beach with gentle, small waves. Avoid crowded spots and big waves, which can be intimidating and dangerous for novices. Look for a sandy-bottomed beach to minimize the risk of injury.</p>
+
+            <h3 class="shippingTag">3. Take a Lesson</h3>
+            <p>Investing in a lesson from a certified surf instructor can make a huge difference. They can teach you the basics, such as how to pop up on the board, proper paddling techniques, and safety tips, which are crucial for your confidence and progress.</p>
+
+            <h3 class="shippingTag">4. Learn Surf Etiquette</h3>
+            <p>Understanding and respecting surf etiquette is essential. This includes knowing the right-of-way rules, not dropping in on other surfers' waves, and maintaining a respectful distance. This will help you avoid conflicts and ensure a positive experience for everyone in the water.</p>
+
+            <h3 class="shippingTag">5. Practice Paddling and Pop-Ups</h3>
+            <p>Strong paddling skills are key to catching waves. Practice paddling on your board in calm water to build strength and technique. Additionally, practice popping up on land so you can smoothly transition from lying down to standing up when you're in the water.</p>
+
+            <h3 class="shippingTag">6. Stay Relaxed and Have Patience</h3>
+            <p>Surfing requires a lot of patience and a relaxed mindset. Don't get discouraged by falls and wipeouts—they're part of the learning process. Focus on having fun and celebrating small victories as you improve.</p>
+
+            <h3 class="shippingTag">7. Watch the Waves and Other Surfers</h3>
+            <p>Spend time observing the waves and how experienced surfers navigate them. This will help you understand wave patterns, timing, and positioning. Watching others can provide valuable insights and inspire your own technique.</p>
+        <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        </article>
+        <article class="sLss">    
+        <h2 class="shippingTag">How to Catch a Wave</h2>
+        <h3 class="toggle">Learn More</h3>
+        <div class="content">
+           <p>Riding a wave is an exhilarating experience that requires skill, timing, and a good understanding of the ocean.</p>
         <p>To catch a wave, start by paddling out past the breaking waves until you reach the lineup, where the waves begin to crest and break.</p>
         <p>Once you spot a wave you want to catch, paddle hard to match its speed and angle. As the wave begins to lift you, pop up onto your feet and ride down the face of the wave, using your body to balance and steer.</p>
         <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
-</section>        
-    </main>
+        </div>
+            </article>
+        <article class="sLss">    
+        <h2 class="shippingTag">15 Essential Tips for Intermediate Surfers</h2>
+        <h3 class="toggle">Learn More</h3>
+        <div class="content">
+           <h3 class="shippingTag">1. Improve Your Paddling Technique</h3>
+        <p>Focus on efficient paddling to conserve energy and improve your wave-catching ability. Engage your core and use long, deep strokes to move smoothly through the water.</p>
+
+        <h3 class="shippingTag">2. Master the Duck Dive</h3>
+        <p>Learn to duck dive properly to get through breaking waves with minimal effort. Push the nose of your board down and then use your knee or foot to sink the tail.</p>
+
+        <h3 class="shippingTag">3. Read Waves Better</h3>
+        <p>Develop your ability to read waves and identify the best ones to catch. Practice watching the horizon and predicting where waves will break.</p>
+
+        <h3 class="shippingTag">4. Work on Your Pop-Up Speed</h3>
+        <p>Increase the speed and smoothness of your pop-up to ensure you catch more waves. Practice on land and focus on explosive, fluid movements.</p>
+
+        <h3 class="shippingTag">5. Enhance Your Balance</h3>
+        <p>Improve your balance by incorporating balance exercises into your routine. Activities like skateboarding, balance boards, and yoga can help.</p>
+
+        <h3 class="shippingTag">6. Explore Different Types of Waves</h3>
+        <p>Challenge yourself by surfing different types of waves and conditions. This will help you adapt to various situations and improve your overall skill set.</p>
+
+        <h3 class="shippingTag">7. Work on Bottom Turns</h3>
+        <p>The bottom turn is crucial for setting up your maneuvers. Practice generating speed and positioning yourself correctly to perform powerful bottom turns.</p>
+
+        <h3 class="shippingTag">8. Develop Your Top Turns</h3>
+        <p>Top turns are essential for linking maneuvers. Focus on your body positioning and timing to execute smooth, controlled top turns.</p>
+
+        <h3 class="shippingTag">9. Learn to Carve</h3>
+        <p>Carving allows you to make smooth, arcing turns on the wave face. Practice shifting your weight and using your rails effectively.</p>
+
+        <h3 class="shippingTag">10. Practice Cutbacks</h3>
+        <p>Cutbacks are useful for staying in the power zone of the wave. Work on your technique to execute tight, controlled cutbacks.</p>
+
+        <h3 class="shippingTag">11. Improve Your Timing</h3>
+        <p>Timing is critical for executing maneuvers and catching waves. Practice your timing to ensure you're in the right place at the right moment.</p>
+
+        <h3 class="shippingTag">12. Surf Different Boards</h3>
+        <p>Experiment with different types of surfboards to understand how they affect your performance. This will help you find the right board for various conditions.</p>
+
+        <h3 class="shippingTag">13. Build Your Stamina</h3>
+        <p>Surfing can be physically demanding, so work on your overall fitness and stamina. Regular cardio and strength training can make a big difference.</p>
+
+        <h3 class="shippingTag">14. Focus on Wave Positioning</h3>
+        <p>Position yourself correctly on the wave to maximize your ride. Practice finding the optimal spot to take off and stay in the power zone.</p>
+
+        <h3 class="shippingTag">15. Record and Review Your Sessions</h3>
+        <p>Use a GoPro or have a friend film your sessions. Reviewing your footage can help you identify areas for improvement and track your progress.</p>
+            <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            </article>
+        
+        <article class="sLss">    
+            <h2 class="shippingTag">Things to Avoid While Surfing</h2>
+            <h3 class="toggle">Learn More</h3>
+            <div class="content">
+        <h3 class="shippingTag">1. Paddling Out in the Wrong Spot</h3>
+        <p>Avoid paddling out in the main surfing area where other surfers are riding waves. This can cause collisions and disrupt others. Instead, paddle out through the channels where waves are not breaking.</p>
+
+        <h3 class="shippingTag">2. Dropping In on Other Surfers</h3>
+        <p>Dropping in on another surfer's wave is considered one of the biggest surfing etiquette violations. Always look to your left and right to make sure no one else is already on the wave before you take off.</p>
+
+        <h3 class="shippingTag">3. Neglecting Ocean Awareness</h3>
+        <p>Ignoring the conditions of the ocean can be dangerous. Always check the weather, tides, and wave reports before heading out. Be aware of strong currents, riptides, and changing conditions.</p>
+
+        <h3 class="shippingTag">4. Using the Wrong Equipment</h3>
+        <p>Using a board that is not suitable for your skill level or the wave conditions can hinder your progress and safety. Ensure your board, leash, and fins are appropriate for the surf conditions and your experience level.</p>
+
+        <h3 class="shippingTag">5. Forgetting to Warm Up</h3>
+        <p>Skipping a proper warm-up can increase your risk of injury and decrease your performance. Always take a few minutes to stretch and prepare your body for the physical demands of surfing.</p>
+
+        <h3 class="shippingTag">6. Being Disrespectful to Locals</h3>
+        <p>Disrespecting local surfers and surf spots can lead to conflicts and an unpleasant experience. Always be courteous, respect local rules, and be mindful of your behavior in and out of the water.</p>
+
+        <h3 class="shippingTag">7. Overestimating Your Abilities</h3>
+        <p>Attempting to surf waves beyond your skill level can be dangerous. Know your limits and gradually progress to more challenging waves as your skills improve.</p>
+
+        <h3 class="shippingTag">8. Ignoring Surf Etiquette</h3>
+        <p>Surf etiquette exists to keep everyone safe and ensure a pleasant experience for all. Familiarize yourself with the basic rules and follow them consistently.</p>
+
+        <h3 class="shippingTag">9. Failing to Stay Hydrated</h3>
+        <p>Surfing is physically demanding, and staying hydrated is crucial. Drink plenty of water before and after your surf session to maintain your performance and health.</p>
+
+        <h3 class="shippingTag">10. Not Practicing Safety Drills</h3>
+        <p>Knowing how to handle emergencies is vital. Practice safety drills, such as how to get out of a rip current, how to signal for help, and basic first aid for surf-related injuries.</p>
+            <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            </article> 
+         <article class="sLss">    
+        <h2 class="shippingTag">The Importance of Using Sunscreen</h2>
+        <h3 class="toggle">Learn More</h3>
+        <div class="content">
+        <h3 class="shippingTag">1. Protects Against Harmful UV Rays</h3>
+        <p>Sunscreen is essential for protecting your skin from the harmful effects of ultraviolet (UV) rays. UV rays can cause sunburn, skin damage, and increase the risk of skin cancer. Broad-spectrum sunscreens shield your skin from both UVA and UVB rays, providing comprehensive protection.</p>
+
+        <h3 class="shippingTag">2. Prevents Premature Aging</h3>
+        <p>Exposure to the sun's UV rays is one of the leading causes of premature aging, including wrinkles, fine lines, and age spots. Regular use of sunscreen helps maintain a youthful appearance by protecting your skin from photoaging.</p>
+
+        <h3 class="shippingTag">3. Reduces the Risk of Skin Cancer</h3>
+        <p>Skin cancer is one of the most common types of cancer, and prolonged sun exposure is a significant risk factor. Applying sunscreen daily reduces the likelihood of developing skin cancer, including melanoma, which can be life-threatening.</p>
+
+        <h3 class="shippingTag">4. Helps Maintain Even Skin Tone</h3>
+        <p>UV exposure can lead to hyperpigmentation, causing uneven skin tone and dark spots. Sunscreen helps prevent these issues by shielding your skin from the sun's harmful rays, ensuring a more even and radiant complexion.</p>
+
+        <h3 class="shippingTag">5. Essential for All Skin Types</h3>
+        <p>No matter your skin type or color, sunscreen is crucial. People with all skin types, including those with darker skin, can suffer from sun damage. Sunscreen ensures everyone receives adequate protection from the sun's harmful effects.</p>
+
+        <h3 class="shippingTag">6. Safe for Daily Use</h3>
+        <p>Modern sunscreens are designed for everyday use and come in various formulations to suit different preferences and needs. From lightweight lotions to moisturizing creams, there's a sunscreen suitable for every skin type and lifestyle.</p>
+
+        <h3 class="shippingTag">7. Important in All Weather Conditions</h3>
+        <p>Sunscreen isn't just for sunny days. UV rays can penetrate through clouds, and snow can reflect UV rays, increasing exposure. Applying sunscreen daily, regardless of the weather, ensures continuous protection.</p>
+
+        <h3 class="shippingTag">8. Aids in Preventing Sunburn</h3>
+        <p>Sunburns are not only painful but also indicate significant skin damage. Sunscreen helps prevent sunburn by providing a barrier that absorbs or reflects the sun's rays, allowing you to enjoy outdoor activities safely.</p>
+
+        <h3 class="shippingTag">9. Easy to Incorporate into Your Routine</h3>
+        <p>Incorporating sunscreen into your daily skincare routine is simple. Apply it as the final step after moisturizing and before makeup. Consistency is key to ensuring your skin remains protected every day.</p>
+
+        <h3 class="shippingTag">10. Promotes Overall Skin Health</h3>
+        <p>Regular use of sunscreen supports overall skin health by protecting it from environmental damage. Healthy skin is better able to repair itself, stay hydrated, and maintain its protective barrier.</p>
+            <a href="#" class="toggle-link hide-link"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+                </article> 
+        </section>    
+        </main>
          <footer>
         <div class="merge">
             <section class="ftleft">
