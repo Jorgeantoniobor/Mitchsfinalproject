@@ -819,7 +819,6 @@ input[type="submit"]:hover {
     align-items: center;
     margin-bottom: 10px;
     max-width: 230px;
-    max-height: 380px;
 }
 .grid-container article img {
     width: 100%;
@@ -980,9 +979,124 @@ input[type="submit"]:hover {
     color: #43ACC1;
 }
 
-
-
 /* shop page ends here */ 
+
+/* cart page starts here */
+.cart-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.cart, .summary {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 90%;
+    font-size: 1.5em;
+    font-family: "Fjalla One", sans-serif;
+}
+
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+.cart-item img {
+    width: 200px;
+    height: auto;
+}
+.item-info {
+    text-align: center;
+    padding: 10px 0;
+}
+.item-info h4 {
+    margin: 0 0 5px;
+}
+.item-info p {
+    margin: 0;
+    color: grey;
+}
+.item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-quantity > * {
+    font-weight: 900;
+}
+.item-quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.cart-item button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.item-price {
+    font-weight: bold;
+}
+.item-remove {
+    cursor: pointer;
+    color: #ff0000cf;
+    font-size: 16px;
+}
+.cart a {
+    color: #43ACC1;
+}
+.summary h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c2bdbd;
+}
+.summary div {
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.summary select, .summary input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #c2bdbd;
+    font-weight: 700;
+}
+.summary .give-code {
+    padding-bottom: 20px;
+}
+.summary .total-price {
+    border-top: 1px solid #c2bdbd;
+}
+.summary .checkout {
+    background: #43ACC1;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 16px;
+}
+.summary .checkout:hover {
+    background-color: #fff;
+    color: #43ACC1;
+    border: 1px solid #43ACC1;
+    transition: .3s;
+}
+/* cart page ends */
+
+/* cart page media screen */
 
 
 
@@ -1128,7 +1242,99 @@ Footer was 650 */
     
 }
     
+@media (min-width: 750px) {
+     /* shop page */
+    .shop-main .on-sale {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .shopHeading-bg h1 {
+        max-width: 650px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .by-category article:last-of-type {
+        display: none;
+    }
+    .pp-collections article:last-of-type {
+        display: none;
+    }
+    .best-sellers article:last-of-type {
+        display: block;
+        align-self: center;
+    }
+    .grid-container article {
+        max-width: 240px;
+    }
+    .products-link {
+        display: none;
+    }
+    .location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 30px 7%;
+        border: 2px solid #ccc;
+    }
+    .location iframe, .location .directions {
+        min-height: 350px;
+    }
+    .location .directions {
+        padding-top: 50px;
+    }
+    .alerts-container {
+        margin: 50px 7%;
+        text-align: center;
+    }
+    .alerts {
+        max-width: 500px;
+        text-align: center;
+    }
+    .alerts input {
+        width: 70%;
+    }
+    .location-btn #get-direction,
+    .location-btn #reviews {
+        padding: 5px 30px;
+    }
+    .location-btn #get-direction {
+        width: 45%;
+    }
+    .location-btn #reviews {
+        width: 60%;
+    }
+    /* shop page end */
     
+    /* cart page start */
+    .cart-main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .cart {
+        width: 70%;
+    }
+    .summary {
+        width: 30%;
+    }
+    .cart-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cart-item img {
+        width: 100px;
+        height: auto;
+    }
+    .item-info {
+        text-align: left;
+        padding: 0 20px;
+    }
+    /* cart page end */
+}    
     
     
 @media (min-width: 950px) {    
@@ -1222,71 +1428,7 @@ Footer was 650 */
     .articles-container {
         grid-template-columns: 1fr 1fr;
     }
-     /* shop page */
-    .shop-main .on-sale {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .shopHeading-bg h1 {
-        max-width: 650px;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-    .by-category article:last-of-type {
-        display: none;
-    }
-    .pp-collections article:last-of-type {
-        display: none;
-    }
-    .best-sellers article:last-of-type {
-        display: block;
-        align-self: center;
-    }
-    .grid-container article {
-        max-width: 240px;
-        max-height: 405px;
-    }
-    .products-link {
-        display: none;
-    }
-    .location {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        margin: 30px 7%;
-        border: 2px solid #ccc;
-    }
-    .location iframe, .location .directions {
-        min-height: 350px;
-    }
-    .location .directions {
-        padding-top: 50px;
-    }
-    .alerts-container {
-        margin: 50px 7%;
-        text-align: center;
-    }
-    .alerts {
-        max-width: 500px;
-        text-align: center;
-    }
-    .alerts input {
-        width: 70%;
-    }
-    .location-btn #get-direction,
-    .location-btn #reviews {
-        padding: 5px 30px;
-    }
-    .location-btn #get-direction {
-        width: 45%;
-    }
-    .location-btn #reviews {
-        width: 60%;
-    }
-    /* shop page end */
+    
     /*media maybe delete this*/
     .formArea li.mt-2 {
             margin-top: 2rem;
