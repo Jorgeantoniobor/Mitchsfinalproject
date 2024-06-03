@@ -961,7 +961,6 @@ input[type="submit"]:hover {
     width: 95%;
     box-sizing: border-box;
     border-color: transparent;
-    
 }
 ::placeholder {
     color: #000;
@@ -996,8 +995,6 @@ input[type="submit"]:hover {
     font-size: 1.5em;
     font-family: "Fjalla One", sans-serif;
 }
-
-
 .cart-item {
     display: flex;
     flex-direction: column;
@@ -1034,7 +1031,6 @@ input[type="submit"]:hover {
     border: 1px solid #ccc;
     margin: 0 5px;
 }
-
 .cart-item button {
     background-color: transparent;
     border: none;
@@ -1093,6 +1089,14 @@ input[type="submit"]:hover {
     color: #43ACC1;
     border: 1px solid #43ACC1;
     transition: .3s;
+}
+.summary .total-price p, .summary .subtotal-price p {
+    display: flex;
+    justify-content: space-between;
+}
+.summary .subtotal-price .total-items {
+    margin-right: auto;
+    padding-left: 7px;
 }
 /* cart page ends */
 
