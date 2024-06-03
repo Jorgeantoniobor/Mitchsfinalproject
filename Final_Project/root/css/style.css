@@ -12,6 +12,18 @@ h3 {
     margin: 1.5em;
 }
 
+p {
+    font-size: 1.2em;
+    margin: .5em 2em .5em;
+    line-height: 1.2em;
+    
+}
+
+li {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-left: 2.5em;
+}
 
 /* header */ 
 header {
@@ -176,7 +188,60 @@ a:active {
     color: #2f6a75;
         }
 
-
+/*form styling */
+ form {
+    border: 2px solid #BC572B;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+        }
+fieldset {
+    border: none;
+        }
+.joinForm {
+     border: 2px solid #BC572B;
+    padding: 20px;
+    margin-bottom: 20px;
+        }
+legend {
+    font-size: 1.7em;
+    color: #BC572B;
+    font-weight: bold;
+        }
+label {
+    display: block;
+    margin: 10px 0 5px;
+        }
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="submit"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+        }
+input[type="submit"] {
+    background-color: #fff;
+    color: #022E3B;
+    padding: 10px 20px;
+    border: 2px solid #022E3B;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+        }
+input[type="submit"]:hover {
+    background-color: #022E3B;
+    color: #fff;
+        }
+.submit {
+    background-color: #BC572B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #43ACC1;
+}
 
 /*footer */
 footer {
@@ -402,20 +467,7 @@ h3.shippingTag  {
     margin: 1rem;
     text-transform: uppercase;
 }
-/*
-p {
-    font-size: 1.2em;
-    margin: .5em 2em .5em;
-    line-height: 1.2em;
-    
-}
 
-li {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    margin-left: 2.5em;
-    
-}*/
 .shadow {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
     margin-bottom: 2em;
@@ -523,60 +575,7 @@ li {
     margin-bottom: 2em;
 }
 
-/*form styling */
- form {
-    border: 2px solid #BC572B;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-        }
-fieldset {
-    border: none;
-        }
-.joinForm {
-     border: 2px solid #BC572B;
-    padding: 20px;
-    margin-bottom: 20px;
-        }
-legend {
-    font-size: 1.7em;
-    color: #BC572B;
-    font-weight: bold;
-        }
-label {
-    display: block;
-    margin: 10px 0 5px;
-        }
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="submit"], select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-        }
-input[type="submit"] {
-    background-color: #fff;
-    color: #022E3B;
-    padding: 10px 20px;
-    border: 2px solid #022E3B;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-        }
-input[type="submit"]:hover {
-    background-color: #022E3B;
-    color: #fff;
-        }
-.submit {
-    background-color: #BC572B;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.submit:hover {
-    background-color: #43ACC1;
-}
+
 /* Nika*/
 /* media page */
 .mediaInfo {
@@ -1436,7 +1435,7 @@ Footer was 650 */
         }
 /* media end */
     
-    /*forms and IDK */
+    /*forms and media page */
     
      .mediaInfo {
         margin-top: 0rem;
@@ -1476,7 +1475,7 @@ Footer was 650 */
         max-width: 920px;
         margin: 20px auto;
      }
-/* end whatever that was */ 
+/* end forms and media page*/ 
 
     }
     
