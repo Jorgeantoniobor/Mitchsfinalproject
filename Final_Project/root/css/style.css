@@ -1439,7 +1439,7 @@ Footer was 650 */
     }
     /* cart page end */
 
-    / * details page starts here */
+    /* details page starts here */
     .details-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
