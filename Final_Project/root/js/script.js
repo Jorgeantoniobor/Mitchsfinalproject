@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const totalItemsSpan = document.querySelector('.total-items');
-  const subtotalPriceSpan = document.querySelector('.subtotal-price');
+  const subtotalPriceSpan = document.querySelector('.subtotal-price-value');
   const totalPriceSpan = document.querySelector('.total-price-value');
   const shippingSelect = document.getElementById('shipping');
 
