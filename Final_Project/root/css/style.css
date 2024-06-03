@@ -240,8 +240,6 @@ footer a:hover {
     display: flex;
     position: relative;  
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     object-fit: contain; 
     object-position: center;
 }
@@ -1176,7 +1174,8 @@ Footer was 650 */
 
     #boardsPic {
         grid-column: 2 / 3; 
-        grid-row: 2 / 3;    
+        grid-row: 2 / 3; 
+        height:100%;
 }
 
     #ladyPic {
