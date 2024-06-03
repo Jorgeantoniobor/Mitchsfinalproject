@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>Shop | Mitch's Surf Shop</title>
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+    </head>
+   
+    <body>
+        <header>
+            <section class="menuwrap">
+                <a href="../index.html"><img src="../images/logo.png" alt="mitchs logo" ></a>
+                <label for="search" id="search">
+                        <a href="../pages/about.html"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+                </label>
+                <label for="shopcart" id="shopcart">
+                    <a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+                </label>
+                <input type="checkbox" id="checkbox">
+                    <label for="checkbox"> 
+                    <i class="fa-solid fa-bars menuIcon"></i>
+                    <i class="fa-solid fa-xmark menuIconClose"></i>
+                </label>
+                <nav>   
+                    <ul> 
+                        <li> <a href="../index.html">Home</a></li>
+                        <li><a href="../pages/lessons.html">Lessons</a></li>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/about.html">About Us</a></li>
+                        <li><a href="../pages/contact.html">Contact Us</a></li>
+                        <li><a href="../pages/faq.html">FAQ</a></li>
+                    </ul>  
+                </nav>
+            </section>
+        </header>
+
+        <main class="details-main">
+                <section class="product-image">
+                    <img src="../images/surfboard-ms-flying.webp" alt="surfboard-ms-flying">
+                </section>
+                <section class="product-info">
+                    <h2>MS-FLYING</h2>
+                    <div class="reviews">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews-count">4 Reviews</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$1,495.00</span>
+                        <span class="original-price">$1,395.00</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="options">
+                        <div class="size">
+                            <label for="size">Size</label>
+                            <select id="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                        </div>
+                        <div class="color">
+                            <label for="color">Color</label>
+                            <select id="color">
+                                <option value="blue">Blue</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <label for="quantity">Quantity</label>
+                            <div class="quantity-controls">
+                                <button class="decrease">-</button>
+                                <input type="number" id="quantity" value="1" min="1">
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../pages/cart.html"><button class="add-to-cart">Add to Cart</button></a>
+                </section>
+        </main>
+
+    
+         
+        <footer>
+            <div class="merge">
+                <section class="ftleft">
+                    <a href="index.html"><img src="../images/logo.png" alt="mitchs logo" ></a>
+                    <div class="text">
+                        <h3>About Mitch's Surf Shop</h3>
+                        <p>We stock over 600 new and used surfboards and accessories. We specialize in buying, selling, and trading.</p>
+                        <p>Our experienced team is committed to providing excellent customer service for the ultimate board buying experience.</p>
+                        <div class ="SMlogos">
+                            <i class="fa-brands fa-instagram"></i> 
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </section> 
+                <section class="ftright">
+                    <div class="columns">
+                        <div class="column">    
+                            <h3>The Brand</h3>
+                            <ul>
+                                <li><a href="../pages/lessons.html">Lessons</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="../pages/about.html">About Us</a></li>
+                                <li><a href="../pages/contact.html">Contact Us</a></li>
+                                <li><a href="../pages/faq.html">FAQ</a></li>
+                            </ul>
+                        </div>        
+                        <div class="column">    
+                            <h3>Need help?</h3>    
+                            <ul>
+                                <li><a href="../pages/faq.html">FAQS</a></li>
+                                <li><a href="../pages/faq.html">Shipping & returns</a></li>
+                                <li><a href="../pages/terms.html">Terms & conditions</a></li>
+                                <li><a href="../pages/contact.html">Contact Us</a></li>
+                                <li><a href="../pages/terms.html">Privacy Policy</a></li>    
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+            <section class="bottom">       
+                <p>&copy;copyright 2024 Mitch`s surf shop</p>    
+            </section>        
+        </footer>     
+    </body>
+</html>
