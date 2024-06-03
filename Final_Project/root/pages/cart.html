@@ -24,7 +24,7 @@
                         <a href="../pages/about.html"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
                 </label>
                 <label for="shopcart" id="shopcart">
-                    <a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
                 </label>
                 <input type="checkbox" id="checkbox">
                     <label for="checkbox"> 
@@ -48,44 +48,44 @@
             <section class="cart">
                 <h2>Shopping Cart</h2>
                 <ul class="cart-items">
-                    <li class="cart-item">
+                    <li class="cart-item" data-price="1395">
                         <img src="../images/DadBod_swallow.webp" alt="Shirt">
                         <div class="item-info">
                             <h4>DADBOD</h4>
                             <p>Black board</p>
                         </div>
                         <div class="item-quantity">
-                            <button>-</button>
-                            <input type="number" value="1" min="1">
-                            <button>+</button>
+                            <button class="decrease-quantity">-</button>
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="increase-quantity">+</button>
                         </div>
                         <p class="item-price">$1,395.00</p>
                         <button class="item-remove"><i class="fa-solid fa-trash-can"></i></button>
                     </li>
-                    <li class="cart-item">
+                    <li class="cart-item" data-price="1395">
                         <img src="../images/VeganFishGreenBoard.webp" alt="Shirt">
                         <div class="item-info">
                             <h4>VeganFish</h4>
                             <p>Green board</p>
                         </div>
                         <div class="item-quantity">
-                            <button>-</button>
-                            <input type="number" value="2" min="1">
-                            <button>+</button>
+                            <button class="decrease-quantity">-</button>
+                            <input class="quantity-input" type="number" value="2" min="1">
+                            <button class="increase-quantity">+</button>
                         </div>
                         <p class="item-price">$1,395.00</p>
                         <button class="item-remove"><i class="fa-solid fa-trash-can"></i></button>
                     </li>
-                    <li class="cart-item">
+                    <li class="cart-item" data-price="1395">
                         <img src="../images/surfboard-ms-crazy.webp" alt="Shirt">
                         <div class="item-info">
                             <h4>MS-CRAZY</h4>
                             <p>White board</p>
                         </div>
                         <div class="item-quantity">
-                            <button>-</button>
-                            <input type="number" value="1" min="1">
-                            <button>+</button>
+                            <button class="decrease-quantity">-</button>
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="increase-quantity">+</button>
                         </div>
                         <p class="item-price">$1,395.00</p>
                         <button class="item-remove"><i class="fa-solid fa-trash-can"></i></button>
@@ -96,7 +96,8 @@
             <aside class="summary">
                 <h2>Summary</h2>
                 <div class="subtotal-price">
-                    <p>ITEMS<span class="total-items">4</span> <span class="subtotal-price-value">$ 5,580.00</span></p>
+                    <p>ITEMS<span class="total-items">4</span> <span class="subtotal-price-value">$ 5,580.00</span>
+                    </p>
                 </div>
                 <div>
                     <label for="shipping">SHIPPING</label>
@@ -160,6 +161,7 @@
                 <p>&copy;copyright 2024 Mitch`s surf shop</p>    
             </section>        
         </footer>
+        
         <script src="../js/script.js"></script>
     </body>
 </html>
