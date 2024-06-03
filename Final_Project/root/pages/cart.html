@@ -95,11 +95,13 @@
             </section>
             <aside class="summary">
                 <h2>Summary</h2>
-                <div>ITEMS <span>3</span> <span>$ 5,580.00</span></div>
+                <div class="subtotal-price">
+                    <p>ITEMS<span class="total-items">4</span> <span class="subtotal-price-value">$ 5,580.00</span></p>
+                </div>
                 <div>
                     <label for="shipping">SHIPPING</label>
                     <select id="shipping">
-                        <option>Standard-Delivery- $10.00</option>
+                        <option value="10">Standard-Delivery- $10.00</option>
                     </select>
                 </div>
                 <div class="give-code">
@@ -107,7 +109,7 @@
                     <input type="text" id="code" placeholder="Enter your code">
                 </div>
                 <div class="total-price">
-                    <p>TOTAL PRICE <span>$ 5,590.00</span></p>
+                    <p>TOTAL PRICE <span class="total-price-value right-align">$ 5,590.00</span></p>
                 </div>
                 <button class="checkout">CHECKOUT</button>
             </aside>
