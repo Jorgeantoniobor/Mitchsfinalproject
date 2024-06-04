@@ -1,19 +1,44 @@
 /******************************************************************
                         TABLE OF CONTENTS
 -----------------------------------------------------------------
-    1. Global Styles
-    2. Header and Nav styles
-    3. Main Body Content
-    4. Generic Selectors (shared page class styles)
-    5. Footer content
-    6. Forms and comments
-    7. Media screen
+    1. Project details and color and typeography info
+    2. Global Styles
+    3. Header and Nav styles
+    4. Main Body Content
+    5. Generic Selectors (shared page class styles)
+    6. Footer content
+    7. Forms and comments
+    8. Media screen
 
 
 ******************************************************************/
 /********************************
+    1. Project Details and Color and Typeography Guidelines
+
+Project Details
+Author: Anas Ahmed, Jorge Ferreira, Elizabeth Olson, Yi Ling Tsai
+Project: Mitch's Surf Shop
+Ver: 1.1
+last updated: 6.3.2024
+Notes: ...
+-----------------------------------------------------
+
+    COLOR GUIDE: 
+Teal (nav hover):  #2f6a75 
+Light Teal (header background): #43ACC1
+Dark Coral (H3): 
+Black: #000
+White: #FFF
+-----------------------------------------------------
+
+    COLOR GUIDE: 
+Bangers: some h2, specifically for headers
+Fjalla One: mostly everything
+*******************************/
+
+/********************************
 ********************************
-    1. Global Styles
+    2. Global Styles
 ********************************
 *******************************/
 html {
@@ -45,7 +70,7 @@ li {
 
 /********************************
 ********************************
-    2. Header and Nav Styles
+    3. Header and Nav Styles
 ********************************
 *******************************/
 header {
@@ -224,66 +249,19 @@ figure.mitchGuys  {
         }
 /********************************
 ********************************
-    5. Forms 
+    4. Main Body Content
 ********************************
 *******************************/
- form {
-    border: 2px solid #BC572B;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-        }
-fieldset {
-    border: none;
-        }
-.joinForm {
-    border: 2px solid #BC572B;
-    padding: 20px;
-    margin-bottom: 20px;
-        }
-legend {
-    font-size: 1.7em;
-    color: #BC572B;
-    font-weight: bold;
-        }
-label {
-    display: block;
-    margin: 10px 0 5px;
-        }
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="submit"], select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-        }
-input[type="submit"] {
-    background-color: #fff;
-    color: #022E3B;
-    padding: 10px 20px;
-    border: 2px solid #022E3B;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-        }
-input[type="submit"]:hover {
-    background-color: #022E3B;
-    color: #fff;
-        }
-.submit {
-    background-color: #BC572B;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.submit:hover {
-    background-color: #43ACC1;
-}
 
 /********************************
 ********************************
-   4. Footer Content
+    5. Generic Selectors (shared page class styles)
+********************************
+*******************************/
+
+/********************************
+********************************
+   6. Footer Content
 ********************************
 *******************************/
 footer {
@@ -1271,17 +1249,74 @@ h3.shippingTag  {
 }
 /* details page end here */
 
+/********************************
+********************************
+    7. Forms and Comments
+********************************
+*******************************/
+ form {
+    border: 2px solid #BC572B;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+        }
+fieldset {
+    border: none;
+        }
+.joinForm {
+    border: 2px solid #BC572B;
+    padding: 20px;
+    margin-bottom: 20px;
+        }
+legend {
+    font-size: 1.7em;
+    color: #BC572B;
+    font-weight: bold;
+        }
+label {
+    display: block;
+    margin: 10px 0 5px;
+        }
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="submit"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+        }
+input[type="submit"] {
+    background-color: #fff;
+    color: #022E3B;
+    padding: 10px 20px;
+    border: 2px solid #022E3B;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+        }
+input[type="submit"]:hover {
+    background-color: #022E3B;
+    color: #fff;
+        }
+.submit {
+    background-color: #BC572B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #43ACC1;
+}
 
-/*----------------------------------- media screens -----------------------------------------------------*/
 
 
-/* original media screen measurements before Liz consolidated: 
 
-Before i consolidated: 
-Anas shop was 780px
-Nika media was 620 also 960
-Jorge header was 920
-Footer was 650 */
+
+/********************************
+********************************
+   8. Media Screens
+********************************
+*******************************/
 
 
 @media screen and (min-width: 620px){
@@ -1353,31 +1388,7 @@ Footer was 650 */
         display: block;     
     }
    
-    /* join form */
-/*             form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            fieldset {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                max-width: 600px;
-            }
-            label {
-                width: 100%;
-            }
-            input[type="text"],
-            input[type="password"],
-            input[type="email"],
-            input[type="submit"] {
-                max-width: 500px;
-            } */
-    
-    
-}
+
     
 @media (min-width: 750px) {
      /* shop page */
