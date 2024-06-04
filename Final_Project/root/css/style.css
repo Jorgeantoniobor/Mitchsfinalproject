@@ -1,3 +1,21 @@
+/******************************************************************
+                        TABLE OF CONTENTS
+-----------------------------------------------------------------
+    1. Global Styles
+    2. Header and Nav styles
+    3. Main Body Content
+    4. Generic Selectors (shared page class styles)
+    5. Footer content
+    6. Forms and comments
+    7. Media screen
+
+
+******************************************************************/
+/********************************
+********************************
+    1. Global Styles
+********************************
+*******************************/
 html {
     font-size: 12px;
     font-family: "Fjalla One", sans-serif;
@@ -25,7 +43,11 @@ li {
     margin-left: 2.5em;
 }
 
-/* header */ 
+/********************************
+********************************
+    2. Header and Nav Styles
+********************************
+*******************************/
 header {
     background-color: #43ACC1;
 }
@@ -200,8 +222,11 @@ figure.mitchGuys  {
         width: 100%; 
         height: auto; 
         }
-
-/*form styling */
+/********************************
+********************************
+    5. Forms 
+********************************
+*******************************/
  form {
     border: 2px solid #BC572B;
     padding: 20px;
@@ -256,7 +281,11 @@ input[type="submit"]:hover {
     background-color: #43ACC1;
 }
 
-/*footer */
+/********************************
+********************************
+   4. Footer Content
+********************************
+*******************************/
 footer {
     background-color: #022E3B;
     text-align: center;
