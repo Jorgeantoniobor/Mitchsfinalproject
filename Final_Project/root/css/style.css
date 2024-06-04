@@ -1674,10 +1674,10 @@ Footer was 650 */
         max-width: 1200px;
     }
     
-    form, p, h2, h3, li, ul, .shippingTag, h3.shippingTag {
+/*     form, p, h2, h3, li, ul, .shippingTag, h3.shippingTag {
         max-width: 920px;
         margin: 20px auto;
-     }
+     } */
 /* end forms and media page*/ 
 
     /* details page starts here */
