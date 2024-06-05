@@ -554,8 +554,8 @@ h3.shippingTag  {
     background-color: var(--secondary-color);
     color: var(--text-color);
     border:1px solid var(--secondary-color);
-    padding: .5rem 2rem;
-    border-radius: 20px;
+    padding: 1rem 2rem;
+    border-radius: 100px;
     margin-left: 2.5rem;
 }
 .addbtn i {
