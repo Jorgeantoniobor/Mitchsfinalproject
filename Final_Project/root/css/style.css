@@ -928,6 +928,9 @@ h3.shippingTag  {
 .posts h2,.videos h2 {
     font-size: 2.5rem;
 }
+.postRow img{
+    width:100%;
+}
 .postRow,.videosRow {
     font-size: 1.5rem;
     position: var(--rel-position);
