@@ -1605,6 +1605,7 @@ select, textarea {
     }
     .onSale img {
         max-width: var(--width);
+        max-height: 214px;
     }
     .videosMain {
         flex-direction: row;
