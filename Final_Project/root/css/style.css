@@ -134,7 +134,7 @@ header img {
   text-transform: uppercase;
   position: var(--abs-position);
   top: 150px;
-  left: 250px;
+  left: 150px;
   color: var(--text-color);
   line-height: 2;
   font-family: var(--font-family-heading)
