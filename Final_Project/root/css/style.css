@@ -226,6 +226,7 @@ nav ul a:hover {
     font-size: 3.6em;
     color: var(--text-color); 
     position: var(--abs-position); 
+    top:10px;
 }
 #search {
     right: 65px;

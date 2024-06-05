@@ -20,12 +20,12 @@
             <header>
                 <section class="menuwrap">
                     <a href="../index.html"><img src="../images/logo.png" alt="mitchs logo" ></a>
-                    <label for="search" id="search">
-                            <a href="./about.html"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
-                    </label>
-                    <label for="shopcart" id="shopcart">
-                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
-                    </label>
+                    <i id="search">
+                            <a href="pages/about.html"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+                    </i>
+                    <i id="shopcart">
+                        <a href="pages/cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+                    </i>
                     <input type="checkbox" id="checkbox">
                      <label for="checkbox"> 
                         <i class="fa-solid fa-bars menuIcon"></i>
@@ -92,47 +92,49 @@
                </aside>
            
     <form action="#" id="book" method="post">
-        <fieldset>
-            <legend>Rental Request Form</legend>
+    <fieldset>
+        <legend>Rental Request Form</legend>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
 
-            <label for="rental-item">Select Rental Item:</label>
-            <select id="rental-item" name="rental-item" required>
-                <option value="wetsuit">Wetsuit - $10/day</option>
-                <option value="soft-surfboard">Soft Surfboard - $20/day</option>
-                <option value="fiberglass-surfboard">Fiberglass Surfboard - $45/day</option>
-                <option value="boogie-board">Boogie Board - $10/day</option>
-                <option value="sup">SUP with paddle - $40/day (La Jolla only)</option>
-                <option value="snorkle-mask">Snorkle & Mask - $10/day (La Jolla only)</option>
-                <option value="swim-fins">Swim Fins - $5/day (La Jolla only)</option>
-            </select><br><br>
+        <label for="rental-item">Select Rental Item:</label>
+        <select id="rental-item" name="rental-item" required>
+            <option value="" disabled selected>Select an item</option>
+            <option value="wetsuit">Wetsuit - $10/day</option>
+            <option value="soft-surfboard">Soft Surfboard - $20/day</option>
+            <option value="fiberglass-surfboard">Fiberglass Surfboard - $45/day</option>
+            <option value="boogie-board">Boogie Board - $10/day</option>
+            <option value="sup">SUP with paddle - $40/day (La Jolla only)</option>
+            <option value="snorkle-mask">Snorkle & Mask - $10/day (La Jolla only)</option>
+            <option value="swim-fins">Swim Fins - $5/day (La Jolla only)</option>
+        </select><br><br>
 
-            <label for="rental-days">Number of Days:</label>
-            <input type="number" id="rental-days" name="rental-days" min="1" required><br><br>
+        <label for="rental-days">Number of Days:</label>
+        <input type="number" id="rental-days" name="rental-days" min="1" required><br><br>
 
-            <label for="shop-location">Select Shop Location:</label>
-            <select id="shop-location" name="shop-location" required>
-                <option value="main-shop">Mitch's Solana Beach</option>
-                <option value="la-jolla">Mitch's La Jolla</option>
-            </select><br><br>
+        <label for="shop-location">Select Shop Location:</label>
+        <select id="shop-location" name="shop-location" required>
+            <option value="" disabled selected>Select a location</option>
+            <option value="main-shop">Mitch's Solana Beach</option>
+            <option value="la-jolla">Mitch's La Jolla</option>
+        </select><br><br>
 
-            <label for="credit-card">Credit Card Number:</label>
-            <input type="text" id="credit-card" name="credit-card" required><br><br>
+        <label for="credit-card">Credit Card Number:</label>
+        <input type="text" id="credit-card" name="credit-card" required><br><br>
 
-            <label for="comments">Additional Comments:</label>
-            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
 
-            <input class="submit" type="submit" value="Submit Rental Request">
-        </fieldset>
-    </form>
+        <input class="submit" type="submit" value="Submit Rental Request">
+    </fieldset>
+</form>
             </section>
         </main>   
         
